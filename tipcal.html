@@ -1,8 +1,11 @@
+<!--TIP CALCULATOR-->
+<!DOCTYPE html>
 <html>
-<head>
-    
+<head>   
 <style>
-    body{background-color: #712018;}
+    body{
+        background-color: #712018;
+    }
     #con{
         text-align: center;
         padding: 1px;
@@ -15,8 +18,8 @@
         margin-right: auto;
         background-color:black;
     }  
-   
     </style>
+    <!--The function calculate amount each staff member get in a tip-->
     <script>
     function cal(){
         var amount=document.getElementById("n").value;
@@ -24,31 +27,22 @@
         var splits=document.getElementById("p").value;
         y= (amount*(percent/100))/splits;
         document.getElementById("result").innerHTML="TIP AMOUNT $ "+ y +" each";
-    }
-    
-    </script>
-    
+    }    
+    </script>  
     </head>
-<body>
-    
+<body>    
    <div id="con">
        <h3>TIP CALCULATOR</h3>
     <div id="sub" style="padding: 50px;background-color: white;color: black; border-bottom-left-radius:20px;border-bottom-right-radius: 20px; ">
-    <span>How much is your bill?</span><br><br>
-    <span>$</span><input type="number" id="n"><br><br>
-    
-    <span>How was your service?</span><br>
-    <input type="number" id="per" style="height: 50px;"><br><br>
-    <span>How was people are sharing the bill?</span><br><br>
-       <input type="number" id="p"><span>people</span><br> <br>
-       <button type="submit" onclick = "cal()" style="background-color:#C93624;color: white;height: 40px;width: 130px;">CALCULATE</button> <br><br>
-       <span id="result"></span>
-          </div> 
+        <span>How much is your bill?</span><br><br>
+        <span>$</span><input type="number" id="n"><br><br>
+        <span>How was your service?</span><br>
+        <input type="number" id="per" style="height: 50px;"><br><br>
+        <span>How was people are sharing the bill?</span><br><br>
+        <input type="number" id="p"><span>people</span><br> <br>
+        <button type="submit" onclick = "cal()" style="background-color:#C93624;color: white;height: 40px;width: 130px;">CALCULATE</button> <br><br>
+        <span id="result"></span>
     </div> 
-    
-    
-    
+    </div> 
     </body>
-
-
 </html>
